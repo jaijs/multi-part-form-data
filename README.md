@@ -1,5 +1,5 @@
 
-# Multi Part Form Data
+# Multi Part Form Data Upload
 A full fledge node js module for parsing the multipart/form data.
 
 
@@ -21,14 +21,14 @@ A full fledge node js module for parsing the multipart/form data.
 Install my-project with npm
 
 ```bash
-  npm install multi-part-form-data
+  npm install multi-part-form-data-upload
 ```
 
 ### Usage
 
 ```javascript
 // Express
-const uploader = require('../src/index')(options /* config options */ );
+const uploader = require('multi-part-form-data-upload')(options /* config options */ );
 const app = express();
 
 app.post('/uploads',uploader, (req, res) => {
@@ -39,7 +39,7 @@ app.post('/uploads',uploader, (req, res) => {
 //  OR Http
 
 const http = require('http');
-const uploader = require('../src/index')(options /* config options */ );
+const uploader = require('multi-part-form-data-upload')(options /* config options */ );
 
 const server = http.createServer(async (req, res) => {
   if (req.url === '/uploads' && req.method.toLowerCase() === 'post') {
@@ -58,7 +58,7 @@ const server = http.createServer(async (req, res) => {
 ```javascript
 const moduleName = 'http';
 const http = require('http');
-const uploader = require('multi-part-form-data');
+const uploader = require('multi-part-form-data-upload');
 
 const server = http.createServer(async (req, res) => {
   if (req.url === '/uploads' && req.method.toLowerCase() === 'post') {
@@ -95,7 +95,7 @@ server.listen(1111, () => {
 ```javascript
 const moduleName = 'Express';
 const express = require('express');
-const uploader = require('multi-part-form-data');
+const uploader = require('multi-part-form-data-upload');
 
 const app = express();
 const port = 1111;

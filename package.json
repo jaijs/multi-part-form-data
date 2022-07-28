@@ -1,9 +1,9 @@
 {
-  "name": "multi-part-form-data",
-  "version": "1.0.1",
+  "name": "multi-part-form-data-upload",
+  "version": "1.0.13",
   "description": "MultiPartFormData is a simple all in one multipart/form-data parser for Node.js",
   "keywords":["form", "multipart/form-data","data", "multipart", "parser", "file uploader","uploads", "node", "jai"],
-  "main": "/src/index.js",
+  "main": "./src/index.js",
   "scripts": {
     "lint": "eslint --ext .js,.ts src",
     "lint:fix": "eslint --fix --ext .js,.ts src"
@@ -19,7 +19,6 @@
     "url": "https://github.com/jaijs/multi-part-form-data"
   },
   "dependencies": {
-    "express": "^4.18.1",
     "mime-db": "^1.52.0",
     "mkdirp": "^1.0.4"
   },
